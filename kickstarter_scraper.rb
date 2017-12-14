@@ -11,7 +11,7 @@ def create_project_hash
 
   lists.each do |list|
     project_name = list.css(".bbcard_name strong a").text
-    [:project_name] = Hash.new
+    :project_name = Hash.new
   end
 
   binding.pry
