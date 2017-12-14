@@ -10,8 +10,8 @@ def create_project_hash
   projects = Hash.new
 
   lists.each do |list|
-    project_name = list.css(".bbcard_name strong a").text
-    [project_name] = Hash.new
+    # project_name = list.css(".bbcard_name strong a").text
+    [list.css(".bbcard_name strong a").text] = Hash.new
     puts :project_name
   end
 
