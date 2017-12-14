@@ -9,11 +9,11 @@ def create_project_hash
   lists = kickstarter.css("li.project.grid_4")
   projects = Hash.new
 
-  lists.each do |list|
+  # lists.each do |list|
     # project_name = list.css(".bbcard_name strong a").text
-    [list.css(".bbcard_name strong a").text] = Hash.new
+    # [list.css(".bbcard_name strong a").text] = Hash.new
     # puts :project_name
-  end
+  # end
 
   binding.pry
 
