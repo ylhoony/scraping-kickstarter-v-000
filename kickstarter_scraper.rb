@@ -15,6 +15,10 @@ def create_project_hash
 
   projects = {}
 
+  kickstarter.css("li.project.grid_4").each do |project|
+    projects[project] = {}
+  end
+
   # lists.each do |list|
     # project_name = list.css(".bbcard_name strong a").text
     # [list.css(".bbcard_name strong a").text] = Hash.new
